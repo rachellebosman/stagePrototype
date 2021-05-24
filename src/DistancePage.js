@@ -3,13 +3,12 @@ import DistanceBar from './components/DistanceBar'
 
 function distanceLeft() {
 
- 
+    const metersLeft = 0.8; 
 
     return (
-        <div>
-            <p> Distance Left </p>
-            <DistanceBar /> 
-            
+        <div className="distanceLeftPage">
+            <p>  Only {metersLeft} meter to go </p>
+            <DistanceBar data={metersLeft} /> 
         </div>
     )
 }
