@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, setState} from 'react'
 import '../styles/style.scss';
 //import *  as d3 from 'd3';
 
