@@ -5,7 +5,8 @@ function greetingPage() {
     const greetings = [
         "Hi, hardworker",
         "Hello, beautiful",
-        "Hey, smartypants"
+        "Hey, smartypants",
+        "Hallo, jij verdient koffie"
     ]
 
     const  randomGreeting = greetings[Math.floor(Math.random()*greetings.length)];
