@@ -1,5 +1,7 @@
 import React, {useState, setState} from 'react'
 import '../styles/style.scss';
+import '../App.scss';
+
 //import *  as d3 from 'd3';
 
 function DistanceBar(props) {

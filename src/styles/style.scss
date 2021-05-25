@@ -11,7 +11,16 @@
             font-size: 26px;
             margin: 0 10px ; 
         }
-         
     }
+}
+
+.greeting{
+    animation: fadeIn;
+    animation-duration: 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0%;}
+  100% {opacity: 100%}
 }
 
