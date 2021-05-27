@@ -26,3 +26,16 @@ body { font-family: 'Poppins', sans-serif; }
   100% {opacity: 100%}
 }
 
+
+@keyframes rollout {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .roll-out {
+    animation: .4s rollout;
+  }
