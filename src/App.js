@@ -1,8 +1,7 @@
 import './App.scss';
 import './styles/style.scss';
-import './DistancePage'
-import DistancePage from './DistancePage';
-import GreetingPage from './GreetingPage';
+import DistancePage from './pages/DistancePage';
+import GreetingPage from './pages/GreetingPage';
 
 function App() {
   return (

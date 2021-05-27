@@ -1,9 +1,9 @@
 import React from 'react'
-import DistanceBar from './components/DistanceBar'
+import DistanceBar from '../components/DistanceBar'
 
 function distanceLeft() {
 
-    const metersLeft = 0.8; 
+    const metersLeft = 1.3; 
 
     return (
         <div className="distanceLeftPage">
