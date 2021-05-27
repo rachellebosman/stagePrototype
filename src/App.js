@@ -1,18 +1,15 @@
 import './App.scss';
 import './styles/style.scss';
-import DistancePage from './pages/DistancePage';
-import GreetingPage from './pages/GreetingPage';
+import MainPage from './pages/MainPage';
 
 function App() {
-
-
-
   return (
     <div className="App">
       <header className="App-header">
-        <GreetingPage /> 
-        <DistancePage /> 
-       
+
+        <MainPage />
+
+
       </header>
     </div>
   );
