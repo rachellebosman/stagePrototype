@@ -5,6 +5,7 @@ import { fetchData } from '../components/fetchData';
 
 function DistanceLeft( {data} ) {
 
+    // waarom hernoem je een variable?  
     const randomDistance = data
 
     /* 
