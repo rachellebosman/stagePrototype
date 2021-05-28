@@ -3,6 +3,8 @@ import { fetchData } from '../components/fetchData';
 import DistancePage from './DistancePage';
 import GreetingPage from './GreetingPage';
 
+
+// dit is es5 syntax, probeer de functie eens te herschrijven in es6
 function MainPage() {
 
     const [distance, setDistance] = useState(0)
@@ -21,7 +23,9 @@ function MainPage() {
     //getting Random number as a fake distanceasdfas
     useEffect(() => {
         const interval = setInterval(() => {
+            // ik heb deze code eerder gezien, probeer eens te zorgen dat je die code maar 1x gebruikt en 2x gebruikt
             const randomDistance = distance[Math.floor(Math.random() * distance.length)];
+            // wanneer kan randomDistance undefined worden?
             if (randomDistance !== undefined) {
                 setRandomDistance(randomDistance);
             }
@@ -30,6 +34,7 @@ function MainPage() {
 
     }, [distance]);
 
+    // je else is hier overbnodig aangezien je al een return doet (bij if/else, als je returned in dde if is de else onnodig)
     if (randomDistance >= 1.5) {
         return <GreetingPage />;
     } else {
