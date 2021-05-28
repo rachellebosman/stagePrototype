@@ -1,4 +1,6 @@
+// probeer echt linting toe te voegen en let op je IDE, als er blauwe streepjes ergens onder staan moet je daar wat mee
 import React, { useState } from 'react'
+// deze imports heb ik eerder gezien ;)
 import '../styles/style.scss';
 import '../App.scss';
 
