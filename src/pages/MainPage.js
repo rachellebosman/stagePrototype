@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { fetchData } from '../components/fetchData';
+import { fetchData } from '../utils/fetchData';
 import DistancePage from './DistancePage';
 import GreetingPage from './GreetingPage';
 
-function MainPage() {
-
+const MainPage = () => {
     const [distance, setDistance] = useState(0)
     const [randomDistance, setRandomDistance] = useState(0);
 
@@ -18,23 +17,21 @@ function MainPage() {
         });
     }, []);
 
-    //getting Random number as a fake distanceasdfas
+    //getting Random number as a fake distance
     useEffect(() => {
         const interval = setInterval(() => {
             const randomDistance = distance[Math.floor(Math.random() * distance.length)];
-            if (randomDistance !== undefined) {
-                setRandomDistance(randomDistance);
-            }
+            if (randomDistance === undefined) return;
+            setRandomDistance(randomDistance);
         }, 2000);
         return () => clearInterval(interval);
-
     }, [distance]);
 
     if (randomDistance >= 1.5) {
         return <GreetingPage />;
-    } else {
-        return <DistancePage data={randomDistance} />;
     }
+    return <DistancePage distance={randomDistance} />;
+
 }
 
 export default MainPage
