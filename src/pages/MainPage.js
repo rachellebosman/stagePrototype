@@ -8,16 +8,23 @@ const MainPage = () => {
     const [randomDistance, setRandomDistance] = useState(0);
 
     //link to API 
-    const URL = "data.json";
+    const URL = "dataNew.json";
+    const URL2 = "https://raspberry-pi-api.azurewebsites.net/test ";
 
     //fetching Data from API
     useEffect(() => {
         fetchData(URL).then((response) => {
-            setDistance(response.distance)
+            console.log(response)
+            const x = response.items.map((item) => {
+                return item.distances / 1000
+            })
+            setDistance(x)
         });
     }, []);
 
+    //console.log(distance)
     //getting Random number as a fake distance
+
     useEffect(() => {
         const interval = setInterval(() => {
             const randomDistance = distance[Math.floor(Math.random() * distance.length)];
@@ -31,7 +38,6 @@ const MainPage = () => {
         return <GreetingPage />;
     }
     return <DistancePage distance={randomDistance} />;
-
 }
 
 export default MainPage

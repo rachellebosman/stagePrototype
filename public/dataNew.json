@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "timestamp": "2021-06-09T12:26:01",
+      "heatsource_amount": 2,
+      "distances": [1300]
+    },
+
+    {
+      "id": 2,
+      "timestamp": "2021-06-09T12:27:01",
+      "heatsource_amount": 2,
+      "distances": [1400]
+    },
+
+    {
+      "id": 3,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    }
+  ]
+}
