@@ -9,10 +9,10 @@ function GreetingPage() {
 
         return (
                 <div className="greeting-page">
-                        <div className="greeting"> <h1 className="greeting"> {randomGreeting}</h1> </div>
                         <div className="coffeeCup">
                                 <img src="../img/coffee.svg"></img>
                         </div>
+                        <div className="greeting"> <h1 className="greeting-text"> {randomGreeting}</h1> </div>
                 </div>
         )
 }

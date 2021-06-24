@@ -1,3 +1,25 @@
+@import './variables';
+
 body {
-  background-color: #8ecae6;
+  background-color: $primary-blue;
+}
+
+.greeting-page {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: start;
+}
+
+.greeting {
+  margin-top: -100px;
+  background-color: $secondary-blue;
+  color: $text-color;
+  width: 600px;
+  height: 200px;
+  font-size: $text;
+  border-radius: 10px;
+  //centering the text
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
