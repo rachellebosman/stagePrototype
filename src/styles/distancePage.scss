@@ -1,0 +1,47 @@
+@import './variables';
+
+.coffee-cups {
+  display: flex;
+  align-content: space-between;
+}
+
+.coffee-cup {
+  img {
+    height: 300px;
+    width: auto;
+  }
+}
+
+.cup-reversed {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.distance-bar {
+  border-radius: 10px;
+  margin: auto;
+  display: inline-flex;
+
+  p {
+    margin: -5px 12px;
+    color: white;
+    font-size: 30px;
+  }
+}
+
+.text {
+  background-color: $secondary-blue;
+  color: $text-color;
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  //centering the text
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-2 {
+  margin-left: 40%;
+  margin-top: 20px;
+}

@@ -1,31 +1,21 @@
-body { font-family: 'Poppins', sans-serif; } 
-
-.distanceLeftPage{
-    font-weight: 600;
-    p {
-        font-size: 50px;;
-    }
-
-    .distanceChart {
-        display: flex;
-    
-        p {
-            font-size: 26px;
-            margin: 0 10px ; 
-        }
-    }
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-.greeting{
-    animation: fadeIn;
-    animation-duration: 5s;
+.greeting {
+  animation: fadeIn;
+  animation-duration: 5s;
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0%;}
-  100% {opacity: 100%}
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
-.svg-animation{
+.svg-animation {
   transition: width 1s;
 }

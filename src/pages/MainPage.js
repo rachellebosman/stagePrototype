@@ -34,9 +34,12 @@ const MainPage = () => {
         return () => clearInterval(interval);
     }, [distance]);
 
-    if (randomDistance >= 1.5) {
+    /*if (randomDistance >= 1.5) {
         return <GreetingPage />;
     }
+    return <DistancePage distance={randomDistance} />;
+    */
+
     return <DistancePage distance={randomDistance} />;
 }
 
