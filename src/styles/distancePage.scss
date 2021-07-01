@@ -12,6 +12,13 @@
   }
 }
 
+.drip {
+  img {
+    height: 100px;
+    width: auto;
+  }
+}
+
 .cup-reversed {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -44,4 +51,43 @@
 .text-2 {
   margin-left: 40%;
   margin-top: 20px;
+}
+
+//animation coffee
+
+.drip {
+  z-index: -1;
+  position: relative;
+  top: -400px;
+  animation: item-falling-down 4s forwards;
+  animation-iteration-count: 1;
+}
+
+.text-animation {
+  animation: showing-text 4s forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes item-falling-down {
+  from {
+    top: -300px;
+  }
+
+  to {
+    top: 200px;
+  }
+}
+
+@keyframes showing-text {
+  0% {
+    opacity: 0%;
+  }
+
+  70% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }

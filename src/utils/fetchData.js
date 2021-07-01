@@ -1,5 +1,6 @@
 export const fetchData = (url) => {
 
+    /*
     var request = require('request');
     var options = {
         'method': 'GET',
@@ -11,6 +12,7 @@ export const fetchData = (url) => {
         console.log(response.body);
     });
 
+    */
 
     return fetch(url)
         .then(res => res.json())

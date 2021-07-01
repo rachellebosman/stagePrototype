@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "id": 0,
+      "timestamp": "2021-06-09T12:26:01",
+      "heatsource_amount": 1,
+      "distances": [0]
+    },
+
+    {
       "id": 1,
       "timestamp": "2021-06-09T12:26:01",
       "heatsource_amount": 2,
@@ -16,6 +23,20 @@
 
     {
       "id": 3,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1450]
+    },
+
+    {
+      "id": 4,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 4,
       "timestamp": "2021-06-09T12:28:01",
       "heatsource_amount": 2,
       "distances": [1550]

@@ -7,6 +7,7 @@ function DistanceBar({ distance }) {
     if (distance > 1.5) {
         distance = 1.5
     }
+
     const distanceWidth = fullWidth / 1.5 * distance
 
     return (
