@@ -46,7 +46,6 @@ const MainPage = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             const x = distance.map((item) => {
-
                 if (number == item.id) {
                     setCurrentDistance(item.distances / 1000)
                     setCurrentAmountPeople(item.heatsource_amount)
@@ -56,19 +55,24 @@ const MainPage = () => {
             if (number === 35) (
                 number = 0
             )
-            //console.log("number: " + number)
-
         }, 1000);
         return () => clearInterval(interval);
     }, [distance]);
 
+    //total amount of people
+    const [totalPeople, setTotalPeople] = useState(1);
 
-    //controleren of er nieuw persoon bij de machine komt
+    //checking new person at machine 
     const [newPerson, setNewPerson] = useState(0);
     if (newPerson < currentAmountPeople) {
         console.log(currentAmountPeople + "is higher than " + newPerson);
         setNewPerson(currentAmountPeople)
-        console.log("BEGROETING")
+        console.log("BEGROETING HALLO")
+
+        setTotalPeople(totalPeople + 1)
+        console.log(totalPeople)
+
+        // NEGEERT THE RETURN TREETINGPAGE doe ff normaal vriend
         return <GreetingPage />;
     }
 
@@ -79,14 +83,14 @@ const MainPage = () => {
 
     if (currentDistance >= 1.5 && currentAmountPeople >= 2) {
         console.log("GROTER " + currentDistance + " aantal mensen: " + currentAmountPeople)
-        return <DistanceFeedbackPage />;
+        return <DistanceFeedbackPage totalPeople={totalPeople} />;
     }
 
     else {
-        return <DataPage />
+        return <DataPage totalPeople={totalPeople} />
     }
-    // newperson = randomAmountPeople
-    // if newperson hoger dan randomAmountPeople -> groeting 
+
+    //negeer dit
 
     /*
     if (randomAmountPeople === 1) {
@@ -102,20 +106,14 @@ const MainPage = () => {
 
  */
 
-
-
-
     /*
     if (randomDistance >= 1.5 && randomPeople < 0) {
         console.log("more people")
         return <DistancePage />;
     }
-
     */
 
     //return <GreetingPage />;
-
-
     //return <DistancePage distance={currentDistance} />;
     //return <DistanceFeedbackPage distance={randomDistance} />;
 }

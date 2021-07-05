@@ -3,7 +3,7 @@ import DataPage from '../pages/DataPage';
 import '../styles/distancePage.scss'
 //import { fetchData } from '../utils/fetchData';
 
-function DistanceFeedbackPage() {
+function DistanceFeedbackPage({ totalPeople }) {
 
     const [status, setStatus] = useState(false)
 
@@ -12,7 +12,7 @@ function DistanceFeedbackPage() {
     }, []);
 
     if (status === true) {
-        return <DataPage />;
+        return <DataPage totalPeople={totalPeople} />;
     }
 
     return (
