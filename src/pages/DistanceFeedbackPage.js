@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import MainPage from './MainPage';
+import DataPage from '../pages/DataPage';
 import '../styles/distancePage.scss'
 //import { fetchData } from '../utils/fetchData';
 
@@ -12,7 +12,7 @@ function DistanceFeedbackPage() {
     }, []);
 
     if (status === true) {
-        return <MainPage />;
+        return <DataPage />;
     }
 
     return (

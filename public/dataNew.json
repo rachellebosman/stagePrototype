@@ -10,33 +10,243 @@
     {
       "id": 1,
       "timestamp": "2021-06-09T12:26:01",
-      "heatsource_amount": 2,
-      "distances": [1300]
+      "heatsource_amount": 1,
+      "distances": [0]
     },
 
     {
       "id": 2,
       "timestamp": "2021-06-09T12:27:01",
       "heatsource_amount": 2,
-      "distances": [1400]
+      "distances": [1000]
     },
 
     {
       "id": 3,
       "timestamp": "2021-06-09T12:28:01",
       "heatsource_amount": 2,
-      "distances": [1450]
+      "distances": [1020]
     },
 
     {
       "id": 4,
       "timestamp": "2021-06-09T12:28:01",
       "heatsource_amount": 2,
+      "distances": [1040]
+    },
+
+    {
+      "id": 5,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1050]
+    },
+
+    {
+      "id": 6,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1100]
+    },
+
+    {
+      "id": 7,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1150]
+    },
+
+    {
+      "id": 8,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1200]
+    },
+
+    {
+      "id": 9,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1300]
+    },
+
+    {
+      "id": 10,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1250]
+    },
+
+    {
+      "id": 11,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1300]
+    },
+
+    {
+      "id": 12,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1400]
+    },
+
+    {
+      "id": 13,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1450]
+    },
+
+    {
+      "id": 14,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1510]
+    },
+
+    {
+      "id": 15,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
       "distances": [1550]
     },
 
     {
-      "id": 4,
+      "id": 16,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 17,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 18,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 19,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 20,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 0,
+      "distances": [0]
+    },
+
+    {
+      "id": 21,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 0,
+      "distances": [0]
+    },
+
+    {
+      "id": 22,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 0,
+      "distances": [0]
+    },
+
+    {
+      "id": 23,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 1,
+      "distances": [0]
+    },
+
+    {
+      "id": 24,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 1,
+      "distances": [0]
+    },
+
+    {
+      "id": 25,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 26,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 27,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 28,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 29,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 30,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 31,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 32,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 33,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 34,
+      "timestamp": "2021-06-09T12:28:01",
+      "heatsource_amount": 2,
+      "distances": [1550]
+    },
+
+    {
+      "id": 35,
       "timestamp": "2021-06-09T12:28:01",
       "heatsource_amount": 2,
       "distances": [1550]
