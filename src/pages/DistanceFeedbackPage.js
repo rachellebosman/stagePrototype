@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import DataPage from '../pages/DataPage';
 import '../styles/distancePage.scss'
-//import { fetchData } from '../utils/fetchData';
 
 function DistanceFeedbackPage({ totalPeople }) {
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/style.scss'
 import '../styles/greetingPage.scss'
 import { greetings } from '../utils/constants'

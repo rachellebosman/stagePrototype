@@ -11,18 +11,16 @@ const MainPage = () => {
     const [distance, setDistance] = useState(0)
     const [currentDistance, setCurrentDistance] = useState(0)
     const [arrayAmountPeople, setArrayAmountPeople] = useState([]);
-    const [totalPeople, setTotalPeople] = useState(1);
-    //start number = first id in dataNew.json
-    let number = -4;
+    const [totalPeople, setTotalPeople] = useState(0);
+    let number = -4;  //start number = first id in dataNew.json
 
-    const URL = "dataNew.json";  //link mockup data
+    const URL = "data.json";  //link mockup data
     const URL2 = "https://raspberry-pi-api.azurewebsites.net/test "; //link live data [not working]
 
     //fetching Data from API
     useEffect(() => {
         fetchData(URL).then((response) => {
             const dataFromFetch = response.items.map((item) => {
-                //return item.distances / 1000
                 return item
             })
             setDistance(dataFromFetch)
@@ -55,18 +53,22 @@ const MainPage = () => {
             if (number === 35) (
                 number = 0
             )
-        }, 1000);
+        }, 1800);
         return () => clearInterval(interval);
     }, [distance]);
 
-    console.log(arrayAmountPeople)
+    useEffect(() => {
+        const previousAmount = arrayAmountPeople[arrayAmountPeople.length - 1]
+        const newAmount = arrayAmountPeople[arrayAmountPeople.length - 2]
 
-    //const [totalPeople, setTotalPeople] = useState(1);
+        if ((previousAmount > newAmount)) {
+            setTotalPeople(totalPeople => totalPeople + (previousAmount - newAmount))
+        }
+    }, [arrayAmountPeople]);
 
-
+    console.log("total people" + totalPeople)
 
     if ((arrayAmountPeople[arrayAmountPeople.length - 1] > arrayAmountPeople[arrayAmountPeople.length - 2])) {
-
         return <GreetingPage />;
     }
 
@@ -79,6 +81,7 @@ const MainPage = () => {
     }
 
     return <DataPage totalPeople={totalPeople} />
+
 }
 
 export default MainPage
